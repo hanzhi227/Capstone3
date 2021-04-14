@@ -6,4 +6,8 @@
 
 3. https://www.kaggle.com/jessicali9530/celeba-dataset
 
-Use autoencoder to create a celebrity based on attributes. Identidy certain features on the faces. Pass people's faces into the autoencoder to make them look like a celebrity.
+Use autoencoder to create a celebrity based on attributes. 
+
+Identidy certain features on the faces. 
+
+Pass people's faces into the model to see what celebrity they look like the most!
