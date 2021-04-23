@@ -1,0 +1,4 @@
+Flask/cars_test/
+*.weights
+*.avi
+*.mp4

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div>
+    <h3> {{ string }} </h3>
+    <video width="960" controls>
+      <source src="../static/results.mp4?{{rand}}" type="video/mp4">
+        Your browser does not support the video tag. <!-- Text to be shown incase browser doesnt support html5 -->
+    </video>
+</div>
+
+{% endblock content %}

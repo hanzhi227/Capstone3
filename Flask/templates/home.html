@@ -1,15 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
 
 <html>
-  <style>
-  .important-paragraph{
-    color:red
-  }
-  </style>
-  <h1 class='important-paragraph'>This is the Title or something!</h1>
-  <p>
-    This is a less important paragraph
-  </p>
-  <p class='important-paragraph'>
-  This is a paragraph!
-  </p>
+
+    <div class="main">
+
+      <div class="body">
+        <h2 face='Brush Script MT'>Car Body Type Recognition</h2>
+        <h3>Don't know what kind of car you are driving? Let our our experts (AI model) help you out! Just upload a clear image of your car! We can also process videos.</h3>
+      </div>
+      <div class='buttons'>
+      <form action='/photo', method='POST', enctype='multipart/form-data'>
+          <input type='file' name = 'photo' id='photo'/>
+        <button class = 'button' type="submit" >Upload Photo</button>
+      </form>
+
+      <form action='/video', method='POST', enctype='multipart/form-data'>
+          <input type='file' name = 'vid' id='vid'/>
+        <button class = 'button' type="submit" >Upload Video</button>
+      </form>
+    </div>
+
+    </div>
+
 </html>
+
+
+{% endblock content %}

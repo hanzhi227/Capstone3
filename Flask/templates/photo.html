@@ -1,0 +1,29 @@
+<style>
+img {
+    border: 20px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 600;
+    height: auto;
+}
+    
+    
+</style>
+{% extends "layout.html" %}
+{% block content %}
+
+    <div>
+        <h3>Your Uploaded Image</h3>
+        <img src="./static/incoming.jpg?{{rand}}" alt="Uploaded Image">
+    </div>
+<form action='/photo/results', method='POST'>
+  <div><h4><b style = "background-color:black">Pick which model to run this image through.</b></h4></div>
+<select name="model" id="model" class="selectpicker form-control">
+    <option selected="selected" value = 'car'>Car Type YOLO</option>
+    <option value='coco'>COCO YOLO</option>
+
+</select>
+<div class='move-button'>
+    <button class='button' type="submit">Process Image</button>
+</div>
+{% endblock content %}

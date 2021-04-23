@@ -1,20 +1,82 @@
+.main{
+}
+
+.main h1 {
+    font-size: 6em;
+}
+.main h2 {
+    font-size:3em;
+}
+.main h3 {
+    font-size:2em;
+}
+.main p {
+  font-size:2em;
+}
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    word-spacing: 8px;
+}
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 body {
-  background: #fafafa;
-  color: #333333;
+  color: white;
   margin-top: 5rem;
-  background-image: url('https://www.morflora.com/wp-content/uploads/2019/03/xIris-Flower-Meaning-720x470.jpg.pagespeed.ic.lCMxpXRH4n.jpg');
+/*   background-image: url('https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/28/1499685776-fast-and-furious-in-space.jpg'); */
+    background-image: url('http://www.mvegraveyard.com/uploads/1/0/0/6/100650984/f9-space_orig.jpg');
+  width: 100%;
+
+  /* Center and scale the image nicely */
+
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: white;
 }
 
 .bg-steel {
-  background-color: #65131a;
+  background-color: black;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: white;
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -89,3 +151,27 @@ p.form-inputs {
 #image1 {
   width: 400px
 }
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.button {
+            padding: 1vh 2vw;
+            background-color: black;
+            color: white;
+            border-radius: 16px;
+            border-color: white; 
+            padding-left: 24px; 
+            padding-right: 24px; 
+            font-size: 16px; 
+            font-weight: bold;
+        }
+
+.button:hover {
+            background-color: white;
+            color: black;
+            border-color: cornflowerblue;
+
+        }

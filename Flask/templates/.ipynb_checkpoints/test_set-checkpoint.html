@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+  <style>
+    .important-paragraph{
+      color:aquamarine
+    }
+    </style>
+    <div><h3>Live Predictions on the Standford Car Test Set</h3>
+        <img width = 720 src="./static/images/predictions.jpg?{{file_num}}" alt="Car Prediction">
+<!--         <form action='/test_set', method='POST', enctype='multipart/form-data'> -->
+        <button class = 'button' onClick='window.location.reload();'>Another Prediction</button>
+<!--             </form> -->
+</div>
+        
+
+{% endblock content %}

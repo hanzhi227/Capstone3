@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+    <h3>Your Uploaded Video</h3>
+    <video width="960" controls>
+      <source src="./static/incoming.mp4?{{rand}}" type="video/mp4">
+        Your browser does not support the video tag. <!-- Text to be shown incase browser doesnt support html5 -->
+    </video>
+</div>
+<form action='/video/results', method='POST'>
+  <div><h4><b style = "background-color:black">Pick which model to run this video through. It can take a couple of minutes so be patient!</b></h4></div>
+<select name="model" id="model" class="selectpicker form-control">
+    <option selected="selected" value = 'car'>Car Type YOLO</option>
+    <option value='coco'>COCO YOLO</option>
+
+</select>
+<div class='move-button'>
+    <button class='button' type="submit">Process Video</button>
+</div>
+{% endblock content %}
