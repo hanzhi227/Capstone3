@@ -41,6 +41,8 @@ def test_set():
 @app.route('/photo', methods=['POST'])
 def photo():
     picture = request.files['photo']
+    if os.path.splitext(picture.filename)[1] not in ['.jpg','.png']:
+        return render_template('home.html')
     fn = secure_filename('incoming.jpg')
     picture.save(os.path.join(app.config['UPLOAD_FOLDER'],fn))
     return render_template('photo.html', rand=rand())
@@ -63,6 +65,8 @@ def eval_photo():
 @app.route('/video', methods=['POST'])
 def video():
     video = request.files['vid']
+    if os.path.splitext(video.filename)[1] not in ['.mp4']:
+        return render_template('home.html')
     fn = secure_filename('incoming.mp4')
     video.save(os.path.join(app.config['UPLOAD_FOLDER'],fn))
     return render_template('video.html', rand=rand())

@@ -41,6 +41,8 @@ def test_set():
 @app.route('/photo', methods=['POST'])
 def photo():
     picture = request.files['photo']
+    if os.path.splitext(picture.filename)[1] not in ['.jpg','.png']:
+        return render_template('home.html')
     fn = secure_filename('incoming.jpg')
     picture.save(os.path.join(app.config['UPLOAD_FOLDER'],fn))
     return render_template('photo.html', rand=rand())
@@ -63,6 +65,8 @@ def eval_photo():
 @app.route('/video', methods=['POST'])
 def video():
     video = request.files['vid']
+    if os.path.splitext(video.filename)[1] not in ['.mp4']:
+        return render_template('home.html')
     fn = secure_filename('incoming.mp4')
     video.save(os.path.join(app.config['UPLOAD_FOLDER'],fn))
     return render_template('video.html', rand=rand())
@@ -86,22 +90,6 @@ def eval_vid():
 @app.route('/predict')
 def predict():
     return render_template('predict.html')
-
-@app.route('/video/eda')
-def eda():
-    return render_template('video/eda.html')
-
-@app.route('/results', methods=['POST'])
-def results():
-    
-    picture = request.files['photo']
-    video = request.files['video']
-    video.save(secure_filename('incoming.mp4'))
-#     os.system('./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.4 -dont_show incoming.mp4 -i 0 -out_filename results.avi')
-    os.system('./darknet detector demo cfg/custom.data cfg/yolov4-custom.cfg yolov4-custom.weights -dont_show incoming.mp4 -i 0 -out_filename results.avi')
-    convert_avi_to_mp4('./results.avi','./static/results.mp4')
-#     os.system('cp -n ')
-    return render_template('results.html', rand=rand())
 
 if __name__=="__main__":
     app.run(debug=True)
