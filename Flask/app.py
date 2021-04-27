@@ -77,7 +77,7 @@ def eval_vid():
     model = request.form['model']
 #     os.system('rm ./static/results.mp4')
     if model == 'car':
-        os.system('./darknet detector demo cfg/custom.data cfg/yolov4-custom.cfg yolov4-custom.weights -dont_show ./static/incoming.mp4 -i 0 -out_filename results.avi')
+        os.system('./darknet detector demo cfg/custom.data cfg/yolov4-custom.cfg yolov4-custom.weights -thresh 0.45 -dont_show ./static/incoming.mp4 -i 0 -out_filename results.avi')
         convert_avi_to_mp4('./results.avi','./static/results.mp4')
         string = 'Custom Car YOLOv4 Video Result'
     if model == 'coco':
