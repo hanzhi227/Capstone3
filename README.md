@@ -2,9 +2,8 @@
   <img width=100% src="https://github.com/hanzhi227/Capstone3/blob/main/images/header.JPG">
 </p>
 
-# Capstone 3 - Computer Vision
 
-## YOLOv4 Web App That Can Recognize Car Types User-Uploaded Videos and Images
+# YOLOv4 Web App That Can Recognize Car Types User-Uploaded Videos and Images
 
 Unfortunately AWS costs a lot of money to run that GPU instance so I had to shut it down, but the presentation video below shows everything in action! 
 
