@@ -3,13 +3,23 @@
 </p>
 
 
-# YOLOv4 Web App That Can Recognize Car Types User-Uploaded Videos and Images
+# Car Body Detection Web App
 
-Unfortunately AWS costs a lot of money to run that GPU instance so I had to shut it down, but the presentation video below shows everything in action! 
+------
+### Using AI to Determine What Kind of Car is in the Video/Image - Web App
 
-*If you are looking to hire a talented data scientist (me) and want to see a live demo, I would love to spin it up!*
+Hanzhi Guo
+
+[LinkedIn](https://www.linkedin.com/in/hanzhi-guo/) | guo.hanzhi95@gmail.com
 
 ## >>>[Presentation Video](https://youtu.be/Oq1uYh349Pc)<<<
 [Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vSdl1l7uCRvTmjy11f4J5vrOp1po1GHL8hUvAB5P0mMBOSc6HA9EYaSoAOVdqFlD-gglx9oY584TUKE/pub?start=false&loop=false&delayms=10000)
 
 ------
+
+## Background
+
+------
+
+### Motivation
+
