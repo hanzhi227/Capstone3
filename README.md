@@ -6,7 +6,7 @@
 # What Car is That???
 
 ------
-### Using AI to Determine What Kind of Car is in the Video/Image - Web App
+##### Using AI to Determine What Kind of Car is in the Video/Image (Object Detection) - Web App
 
 Hanzhi Guo
 
@@ -30,3 +30,12 @@ Object detection is all the rage currently, so I wanted to try my hand at detect
 #### [Stanford Cars Dataset](https://www.kaggle.com/eduardo4jesus/stanford-cars-dataset)
 
 The dataset consists of 16,185 images of cars, of which only the 8,144 training images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset. The test set are not labeled with a description.
+
+![](images/data_sample.png)
+
+### Pipeline
+
+* Group 196 unique car names into a more general body types
+  * This would give each class more diversity
+  * Creates a more general model that can handel unseen instances
+
