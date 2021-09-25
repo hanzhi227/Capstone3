@@ -23,4 +23,10 @@ Hanzhi Guo
 
 ### Motivation
 
-Object detection is all the rage currently, so I wanted to try my hand at detecting different types of cars with [YOLO Object Detection](https://github.com/AlexeyAB/darknet). YOLO is an extremely fast, state-of-the-art, real-time object detection system. It would be fun to train the AI on normal cars and seeing what it thinks of exotic cars.
+Object detection is all the rage currently, so I wanted to try my hand at detecting different types of cars with [YOLO Object Detection](https://github.com/AlexeyAB/darknet). YOLO is an extremely fast, state-of-the-art, real-time object detection system. It would be fun to train the AI on normal cars and observing the classification of exotic/uncommon cars, such as the Tesla Truck.
+
+## Data
+------
+#### [Stanford Cars Dataset](https://www.kaggle.com/eduardo4jesus/stanford-cars-dataset)
+
+The dataset consists of 16,185 images of cars, of which only the 8,144 training images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset. The test set are not labeled with a description.
