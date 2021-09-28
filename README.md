@@ -32,7 +32,7 @@ Object detection is all the rage currently, so I wanted to try my hand at detect
 The dataset consists of 16,185 images of cars, of which only the 8,144 images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset.
 
 <p align="center">
-  <img src="https://github.com/hanzhi227/CarRecognition/blob/master/images/data_sample.png">
+  <img src="https://github.com/hanzhi227/Capstone3/tree/main/images/data_sample.png">
 </p>
 
 ### Pipeline
