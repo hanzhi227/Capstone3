@@ -31,7 +31,9 @@ Object detection is all the rage currently, so I wanted to try my hand at detect
 
 The dataset consists of 16,185 images of cars, of which only the 8,144 images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset.
 
-![](images/data_sample.png)
+<p align="center">
+  <img src="https://github.com/hanzhi227/CarRecognition/blob/master/images/data_sample.png">
+</p>
 
 ### Pipeline
 
@@ -42,3 +44,9 @@ From the looks of it, 196 classes is just too specific to do what I am trying to
   * This would give each class more diversity
   * Creates a more general model that can handel unseen instances
 
+
+## Flow of Web App
+
+The user can upload any image (png or jpg) or video (mp4) via the landing page. Then the user picks if they want to use the COCO dataset weights or my custom car dataset weights. After they press "process image" or "process video", the image or video is sent to the python backend where it goes throught the YOLOv4 framework on the GPU-backed AWS instance. Videos will take longer to process depending on size of the file, but images will process quite fast. After the file is processed, the final page of the web app will display back the original image or even video with all of the bounding boxes surrounding the objects it detects and classifying what it is i.e. sedan, coupe, convertible, SUV, truck, Van, etc.
+
+![](images/data_sample.png)
