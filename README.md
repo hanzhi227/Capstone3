@@ -49,4 +49,6 @@ From the looks of it, 196 classes is just too specific to do what I am trying to
 
 The user can upload any image (png or jpg) or video (mp4) via the landing page. Then the user picks if they want to use the COCO dataset weights or my custom car dataset weights. After they press "process image" or "process video", the image or video is sent to the python backend where it goes throught the YOLOv4 framework on the GPU-backed AWS instance. Videos will take longer to process depending on size of the file, but images will process quite fast. After the file is processed, the final page of the web app will display back the original image or even video with all of the bounding boxes surrounding the objects it detects and classifying what it is i.e. sedan, coupe, convertible, SUV, truck, Van, etc.
 
-![](images/data_sample.png)
+<p align="center">
+  <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/flow.JPG">
+</p>
