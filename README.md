@@ -29,13 +29,16 @@ Object detection is all the rage currently, so I wanted to try my hand at detect
 ------
 #### [Stanford Cars Dataset](https://www.kaggle.com/eduardo4jesus/stanford-cars-dataset)
 
-The dataset consists of 16,185 images of cars, of which only the 8,144 training images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset. The test set are not labeled with a description.
+The dataset consists of 16,185 images of cars, of which only the 8,144 images are labeled with car names and bounding boxes. There are 196 unique cars within this dataset.
 
 ![](images/data_sample.png)
 
 ### Pipeline
 
-* Group 196 unique car names into a more general body types
+From the looks of it, 196 classes is just too specific to do what I am trying to do. How can this model even attempt to recognize unseen data if it is overfit on Toyota Corollas and Ford F-150s? That's why I needed to pipeline the data down significantly to more general body types.
+
+* Group 196 unique car names into more general body types
+  * Coupe, Sedan, Convertible, SUV, Truck, Van
   * This would give each class more diversity
   * Creates a more general model that can handel unseen instances
 
