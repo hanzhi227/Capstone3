@@ -44,6 +44,14 @@ From the looks of it, 196 classes is just too specific to do what I am trying to
   * This would give each class more diversity
   * Creates a more general model that can handel unseen instances
 
+### Training
+
+After the data was pipelined into 6 classes, I trained the model on a Google Colab GPU instance for ~20 hours. With the accuracy at 100% on the training data, I was ready to see the try its hand at exotic cars!
+
+<p align="center">
+  <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/training.JPG">
+</p>
+
 
 ## Flow of Web App
 
