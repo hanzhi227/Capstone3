@@ -61,14 +61,23 @@ The user can upload any image (png or jpg) or video (mp4) via the landing page. 
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/flow.JPG">
 </p>
 
+Flow Diagram of User and Data
+
+
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site1.JPG">
 </p>
+
+Landing Page
 
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site2.JPG">
 </p>
 
+Model Selection Page
+
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site3.JPG">
 </p>
+
+Results Page
