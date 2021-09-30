@@ -17,6 +17,8 @@ Hanzhi Guo
 
 ------
 
+[Weights](https://drive.google.com/drive/folders/1-4GN9HdRTMGXNbUb_CsHPk9xl3DQsI79?usp=sharing) need to be placed in /darknet/cfg/ after running the makefile.
+
 ## Background
 
 ------
