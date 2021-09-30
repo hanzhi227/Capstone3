@@ -57,27 +57,54 @@ After the data was pipelined into 6 classes, I trained the model on a Google Col
 
 The user can upload any image (png or jpg) or video (mp4) via the landing page. Then the user picks if they want to use the COCO dataset weights or my custom car dataset weights. After they press "process image" or "process video", the image or video is sent to the python backend where it goes throught the YOLOv4 framework on the GPU-backed AWS instance. Videos will take longer to process depending on size of the file, but images will process quite fast. After the file is processed, the final page of the web app will display back the original image or even video with all of the bounding boxes surrounding the objects it detects and classifying what it is i.e. sedan, coupe, convertible, SUV, truck, Van, etc.
 
+
+#### Flow Diagram of User and Data
+
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/flow.JPG">
 </p>
 
-Flow Diagram of User and Data
 
+
+#### Landing Page
 
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site1.JPG">
 </p>
 
-Landing Page
+
+
+#### Model Selection Page
 
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site2.JPG">
 </p>
 
-Model Selection Page
+
+
+
+#### Results Page
 
 <p align="center">
   <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/site3.JPG">
 </p>
 
-Results Page
+
+#### Lancia Prediction
+
+<p align="center">
+  <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/lancia.JPG">
+</p>
+
+
+#### Lightning McQueen Prediction
+
+<p align="center">
+  <img src="https://github.com/hanzhi227/Capstone3/blob/main/images/lightning.JPG">
+</p>
+
+------
+
+### Conclusion
+
+The results are quite satisfactory. My goal of creating a fun, interactive web app was a huge success. The model actually correctly classified Lightning McQueen and the Tesla Cyber Truck. The Lancia's door is the front windshield so even I am uncertain of what type of car it is, but it sure does look like it can be a coupe!
